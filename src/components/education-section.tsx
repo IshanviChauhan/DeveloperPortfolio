@@ -12,7 +12,8 @@ interface Education {
 const education: Education[] = [
   {
     degree: 'Bachelor of Technology',
-    institution: 'ABES Engineering College, Ghaziabad',
+    institution: 'Dr. A. P. J. Abdul Kalam Technical University, Lucknow',
+    school: 'ABES Engineering College, Ghaziabad',
     period: '2022 - 2026',
     details: 'CGPA: 7.69 (Till 5th Sem)'
   },
