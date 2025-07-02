@@ -24,7 +24,7 @@ export function LiveClock() {
   }, []);
 
   return (
-    <div className="hidden sm:flex after:-z-20 after:absolute after:w-20 after:h-80 after:bg-sky-700 after:rounded-2xl after:shadow-inner after:shadow-slate-900 relative rounded-2xl shadow-inner shadow-gray-50 flex-col justify-evenly items-center w-28 h-48 bg-sky-700 text-gray-50 after:outline-double after:-outline-offset-8 after:outline-sky-800">
+    <div className="flex after:-z-20 after:absolute after:w-20 after:h-80 after:bg-sky-700 after:rounded-2xl after:shadow-inner after:shadow-slate-900 relative rounded-2xl shadow-inner shadow-gray-50 flex-col justify-evenly items-center w-28 h-48 bg-sky-700 text-gray-50 after:outline-double after:-outline-offset-8 after:outline-sky-800">
       <div className="absolute w-24 h-44 bg-neutral-900 rounded-2xl flex flex-col justify-around items-center before:absolute before:w-8 before:h-8 before:bg-sky-400 before:rounded-full before:blur-xl before:top-16 before:right-6 before:w-12 before:h-12 outline-double -outline-offset-4 outline-sky-800">
         <div className="flex flex-col font-extrabold text-6xl z-10">
           <span>{time.hours}</span>
