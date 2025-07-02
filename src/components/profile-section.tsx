@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
-import { PersonalizedGreeting } from './personalized-greeting';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 
-const skills = [
-  'React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS',
-  'Firebase', 'GraphQL', 'Docker', 'Figma', 'JavaScript'
+const technicalSkills = [
+  'C', 'C++', 'Python', 'PHP', 'HTML', 'CSS', 'JavaScript', 'React', 'MySQL',
+  'Git', 'Github', 'Visual Studio Code', 'Google Colab', 'Eclipse', 'Power BI', 'Microsoft Office Suite'
+];
+const softSkills = [
+  'Adaptability', 'Handling Pressure', 'Collaborate', 'Critical thinking',
+  'Leadership', 'Time Management Skills', 'Competitive'
 ];
 
 export function ProfileSection() {
@@ -16,7 +19,7 @@ export function ProfileSection() {
         <Image
           src="https://placehold.co/256x256.png"
           alt="Profile Picture"
-          data-ai-hint="profile picture"
+          data-ai-hint="profile picture woman"
           width={256}
           height={256}
           className="rounded-full object-cover border-4 border-primary shadow-lg"
@@ -25,37 +28,42 @@ export function ProfileSection() {
       </div>
       <div className="text-center md:text-left">
         <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary dark:text-primary">Ishanvi Chauhan</h1>
-        <p className="text-xl md:text-2xl font-medium text-foreground/80 mt-2">Full-Stack Developer & UI/UX Enthusiast</p>
+        <p className="text-xl md:text-2xl font-medium text-foreground/80 mt-2">B.Tech in Computer Science Engineering Student</p>
         
-        <div className="mt-4 text-lg min-h-[28px]">
-          <PersonalizedGreeting />
-        </div>
-        
-        <p className="mt-6 max-w-2xl text-foreground/90">
-          I craft beautiful and functional web applications with a focus on user experience. Passionate about modern web technologies and building products that people love to use.
+        <p className="mt-6 max-w-3xl text-foreground/90">
+          Pursuing B.Tech in Computer Science Engineering from ABES Engineering College with practical experience in Python, SQL, HTML, CSS, JavaScript and React. Certified in Machine Learning and Data Science with a strong foundation in problem-solving, teamwork, and a commitment to continuous learning. Eager to apply technical expertise in innovative and fast-paced environments.
         </p>
         
         <div className="mt-6">
-          <h3 className="text-lg font-headline font-semibold">My Skills</h3>
+          <h3 className="text-lg font-headline font-semibold">Technical Skills</h3>
           <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-3">
-            {skills.map(skill => (
+            {technicalSkills.map(skill => (
               <Badge key={skill} variant="secondary" className="text-sm px-3 py-1">{skill}</Badge>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="text-lg font-headline font-semibold">Soft Skills</h3>
+          <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-3">
+            {softSkills.map(skill => (
+              <Badge key={skill} variant="outline" className="text-sm px-3 py-1">{skill}</Badge>
             ))}
           </div>
         </div>
 
         <div className="flex justify-center md:justify-start items-center gap-4 mt-8">
             <Button variant="outline" size="icon" asChild>
-                <a href="#" aria-label="GitHub"><Github /></a>
+                <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><Github /></a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-                <a href="#" aria-label="LinkedIn"><Linkedin /></a>
+                <a href="https://www.linkedin.com/in/ishanvi-chauhan" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-                <a href="#" aria-label="Twitter"><Twitter /></a>
+                <a href="mailto:ishanvi.chauhan@gmail.com" aria-label="Email"><Mail /></a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-                <a href="mailto:contact@example.com" aria-label="Email"><Mail /></a>
+                <a href="tel:+919871308893" aria-label="Phone"><Phone /></a>
             </Button>
         </div>
       </div>
