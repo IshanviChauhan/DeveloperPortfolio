@@ -7,7 +7,7 @@ export function ContactSection() {
   return (
     <footer id="contact" className="bg-muted mt-24 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-row justify-between items-center gap-8 mb-16">
+        <div className="flex flex-row justify-center items-center gap-8 mb-16">
           <div className="text-left max-w-lg">
             <h2 className="text-3xl font-headline font-bold text-foreground">Get In Touch</h2>
             <p className="mt-4 text-lg text-foreground/80">
