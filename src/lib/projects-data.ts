@@ -4,7 +4,7 @@ export const projects = [
     title: 'HummingBird : Real-Time Video Captioning Web Application',
     date: 'May 2025 - Present',
     description: 'A real-time video captioning web app that generates live textual descriptions from webcam input. Designed to enhance accessibility for the hearing impaired and improve media content analysis, it leverages open-source models and WebSockets to deliver accurate, low-latency captions in real time via a user-friendly interface.',
-    image: '/hummingbird-real-time-video-captioning.png',
+    image: '/HummingBird.png',
     imageHint: 'video streaming interface',
     technologies: ['React.js', 'WebSockets', 'Python (Flask/Django)', 'PyTorch', 'Tailwind CSS'],
     github: '#',
@@ -18,8 +18,8 @@ export const projects = [
     image: '/genero-25-website.png',
     imageHint: 'college fest website',
     technologies: ['Next.js', 'Tailwind CSS', 'SCSS'],
-    github: '#',
-    live: '#'
+    github: 'a',
+    live: 'https://www.genero25.in/'
   },
   {
     slug: 'breathe-easy-air-quality-app',
@@ -29,8 +29,8 @@ export const projects = [
     image: '/breathe-easy-air-quality-app.png',
     imageHint: 'air quality dashboard',
     technologies: ['React.js', 'Node.js', 'OpenAQ API', 'Netlify', 'GitHub'],
-    github: '#',
-    live: '#'
+    github: 'a',
+    live: 'a'
   },
   {
     slug: 'multitasking-automation-bot',
