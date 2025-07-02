@@ -18,7 +18,7 @@ export function InterestsSection() {
                     <h2 className="text-3xl md:text-4xl font-headline font-bold">Interests & Hobbies</h2>
                     <p className="text-lg text-foreground/80 mt-2">Things I enjoy doing in my free time.</p>
                 </div>
-                <div className="relative w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-[400px] flex-shrink-0 z-10">
+                <div className="relative w-full md:w-1/2 h-[200px] sm:h-[250px] md:h-[300px] flex-shrink-0 z-10">
                     <SplineModelInterests />
                 </div>
             </div>
