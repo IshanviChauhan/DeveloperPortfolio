@@ -15,12 +15,12 @@ const interests = [
 export function InterestsSection() {
     return (
         <section id="interests" className="space-y-12">
-            <div className="flex flex-row items-center justify-center text-center md:text-left">
+            <div className="flex flex-row items-center justify-center text-center">
                 <div className="w-1/2 z-20 flex flex-col justify-center items-center">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Interests & Hobbies</h2>
-                    <p className="text-lg text-foreground/80 mt-2">Things I enjoy doing in my free time.</p>
+                    <h2 className="text-2xl sm:text-3xl font-headline font-bold">Interests & Hobbies</h2>
+                    <p className="text-base sm:text-lg text-foreground/80 mt-2">Things I enjoy doing in my free time.</p>
                 </div>
-                <div className="relative w-1/2 h-[270px] md:h-[300px] flex-shrink-0 z-10">
+                <div className="relative w-1/2 h-[200px] sm:h-[250px] md:h-[270px] flex-shrink-0 z-10">
                     <SplineModelInterests />
                 </div>
             </div>
@@ -83,6 +83,19 @@ export function InterestsSection() {
                     if (interest.name === 'Watching Movies') {
                         return (
                             <Link href="/movies" key={interest.name}>
+                                <Card className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border h-full group cursor-pointer">
+                                    <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
+                                        <Icon className="text-primary h-12 w-12 mb-4" />
+                                        <p className="font-semibold flex-grow group-hover:underline">{interest.name}</p>
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        );
+                    }
+
+                    if (interest.name === 'Playing Online Games') {
+                        return (
+                            <Link href="/online-games" key={interest.name}>
                                 <Card className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border h-full group cursor-pointer">
                                     <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
                                         <Icon className="text-primary h-12 w-12 mb-4" />
