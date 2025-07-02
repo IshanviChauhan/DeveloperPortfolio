@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Phone, FileText } from 'lucide-react';
+import { LiveClock } from './live-clock';
 
 const technicalSkills = [
   'C', 'C++', 'Python', 'PHP', 'HTML', 'CSS', 'JavaScript', 'React', 'MySQL',
@@ -16,16 +17,19 @@ export function ProfileSection() {
   return (
     <section id="home" className="text-center md:text-left pt-8">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-        <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
-            <Image
-              src="https://placehold.co/256x256.png"
-              alt="Profile Picture"
-              data-ai-hint="profile picture woman"
-              width={256}
-              height={256}
-              className="rounded-full object-cover border-4 border-primary/50 shadow-lg"
-              priority
-            />
+        <div className="flex items-center justify-center gap-8 md:gap-12">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                <Image
+                  src="https://placehold.co/256x256.png"
+                  alt="Profile Picture"
+                  data-ai-hint="profile picture woman"
+                  width={256}
+                  height={256}
+                  className="rounded-full object-cover border-4 border-primary/50 shadow-lg"
+                  priority
+                />
+            </div>
+            <LiveClock />
         </div>
         <div className="flex-grow">
           <Badge variant="secondary" className="mb-4 text-sm font-medium">B.Tech in Computer Science Engineering Student</Badge>
