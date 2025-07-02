@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
-import { Header } from '@/components/header';
+import { ConditionalHeader } from '@/components/conditional-header';
 
 export const metadata: Metadata = {
   title: 'DevCard - Ishanvi Chauhan',
@@ -22,7 +22,7 @@ export default function RootLayout({
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.19/build/spline-viewer.js" async></script>
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        <Header />
+        <ConditionalHeader />
         {children}
         <Toaster />
       </body>
