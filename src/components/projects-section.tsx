@@ -50,14 +50,15 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="space-y-16">
-      <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">Projects</h2>
-        <p className="text-lg text-foreground/80 mt-2">A selection of my work.</p>
-      </div>
-
-      <div className="relative mx-auto w-full max-w-4xl h-[400px] md:h-[500px] -mb-8 md:-mb-16">
-        <SplineModel />
+    <section id="projects" className="space-y-12">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="text-center md:text-left max-w-lg">
+          <h2 className="text-3xl md:text-4xl font-headline font-bold">Projects</h2>
+          <p className="text-lg text-foreground/80 mt-2">A selection of my work.</p>
+        </div>
+        <div className="relative w-full md:w-1/2 h-[250px] md:h-[300px] flex-shrink-0">
+          <SplineModel />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
