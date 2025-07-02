@@ -15,10 +15,10 @@ export const projects = [
     title: "Website for ABES College Annual Cultural Tech Fest GENERO'25",
     date: 'Mar 2025 - April 2025',
     description: "Collaborated in a team to build a responsive, SEO-optimized website using Next.js, Tailwind CSS, and SCSS for showcasing GENERO'25 events and registrations.",
-    image: '/genero-25-website.png',
+    image: '/Genero.png',
     imageHint: 'college fest website',
     technologies: ['Next.js', 'Tailwind CSS', 'SCSS'],
-    github: 'a',
+    github: 'https://github.com/Kuroo7/Genero-25',
     live: 'https://www.genero25.in/'
   },
   {
@@ -26,11 +26,11 @@ export const projects = [
     title: 'Breathe Easy: Web App for Air Quality Improvement',
     date: 'June 2024',
     description: 'Developed a React.js web app for real-time AQI tracking and tree species recommendation, integrating live data APIs and deploying via Netlify for the HackWithIndia BuildWithIndia Hackathon.',
-    image: '/breathe-easy-air-quality-app.png',
+    image: '/BreatheEasy.png',
     imageHint: 'air quality dashboard',
     technologies: ['React.js', 'Node.js', 'OpenAQ API', 'Netlify', 'GitHub'],
-    github: 'a',
-    live: 'a'
+    github: 'https://github.com/IshanviChauhan/Breathe-Easy',
+    live: 'https://breatheasy24.netlify.app/'
   },
   {
     slug: 'multitasking-automation-bot',
