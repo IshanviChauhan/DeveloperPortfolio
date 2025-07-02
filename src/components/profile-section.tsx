@@ -15,9 +15,9 @@ const softSkills = [
 
 export function ProfileSection() {
   return (
-    <div className="relative -mx-4 sm:-mx-6 lg:-mx-8 overflow-hidden">
+    <div className="relative -mx-4 sm:-mx-6 lg:-mx-8 overflow-hidden -mt-16">
       <Meteors number={30} />
-      <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8 pt-16">
         <section id="home" className="text-center md:text-left pt-8 pb-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
             <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
