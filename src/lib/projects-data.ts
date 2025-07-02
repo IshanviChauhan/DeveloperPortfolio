@@ -37,7 +37,7 @@ export const projects = [
     title: 'Multi-Tasking Bot for Customized Automation',
     date: 'Aug 2023 - Dec 2023',
     description: 'Developed an AI bot using NLP, RNN, and Twilio API to automate social networking tasks, enable real-time communication, and support Industry 4.0-driven knowledge sharing.',
-    image: '/multitasking-automation-bot.png',
+    image: '/Jinnie.png',
     imageHint: 'automation bot interface',
     technologies: ['Python', 'NLP', 'RNN', 'Twilio API'],
     github: '#',

@@ -38,8 +38,8 @@ export function EducationSection() {
     <section id="education" className="space-y-16">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
         <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold">Education</h2>
-            <p className="text-lg text-foreground/80 mt-2">My academic journey.</p>
+            <h2 className="text-3xl md:text-4xl font-headline font-bold text-center">Education</h2>
+            <p className="text-lg text-foreground/80 mt-2 text-center">My academic journey.</p>
         </div>
       </div>
       <div className="relative max-w-3xl mx-auto">

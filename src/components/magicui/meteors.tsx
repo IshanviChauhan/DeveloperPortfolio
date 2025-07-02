@@ -25,14 +25,14 @@ export const Meteors = ({ number = 20, className }: MeteorsProps) => {
 
   return (
     <>
-      {[...new Array(number)].map((_, i) => (
+      {meteorStyles.map((style, i) => (
         <span
           key={"meteor" + i}
           className={cn(
             "pointer-events-none absolute left-1/2 top-1/2 h-0.5 w-0.5 animate-meteor-effect rounded-full bg-slate-400 shadow-[0_0_0_1px_#ffffff10]",
             className
           )}
-          style={meteorStyles[i]}
+          style={style}
         >
           <div className="pointer-events-none absolute top-1/2 -z-10 h-[1px] w-[50px] -translate-y-1/2 bg-gradient-to-r from-slate-400 to-transparent" />
         </span>
