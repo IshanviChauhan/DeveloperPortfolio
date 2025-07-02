@@ -3,7 +3,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { FileText } from 'lucide-react';
 import { Meteors } from '@/components/magicui/meteors';
-import { SkillsetSplineModel } from './skillset-spline-model';
 
 const technicalSkills = [
   'C', 'C++', 'Python', 'PHP', 'HTML', 'CSS', 'JavaScript', 'React', 'MySQL',
@@ -68,11 +67,8 @@ export function ProfileSection() {
 
           <div className="mt-20">
             <div className="flex flex-row items-center justify-center mb-12 gap-8">
-              <div className="w-1/2 text-right pr-8">
+              <div className="w-1/2 text-center">
                 <h3 className="text-3xl md:text-4xl font-headline font-bold">My Skillset</h3>
-              </div>
-              <div className="relative w-1/2 h-[200px]">
-                <SkillsetSplineModel />
               </div>
             </div>
             

@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { School } from 'lucide-react';
+import { EducationSplineModel } from './education-spline-model';
 
 interface Education {
   degree: string;
@@ -36,9 +37,14 @@ const education: Education[] = [
 export function EducationSection() {
   return (
     <section id="education" className="space-y-16">
-      <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">Education</h2>
-        <p className="text-lg text-foreground/80 mt-2">My academic journey.</p>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
+        <div className="md:w-1/2">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold">Education</h2>
+            <p className="text-lg text-foreground/80 mt-2">My academic journey.</p>
+        </div>
+        <div className="relative w-full md:w-1/2 h-[200px] sm:h-[250px] md:h-[300px] flex-shrink-0">
+            <EducationSplineModel />
+        </div>
       </div>
       <div className="relative max-w-3xl mx-auto">
         <div className="absolute left-4 top-0 h-full w-0.5 bg-border" aria-hidden="true"></div>
