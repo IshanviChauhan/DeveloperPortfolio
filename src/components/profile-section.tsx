@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Mail, Phone, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, FileText } from 'lucide-react';
 
 const technicalSkills = [
   'C', 'C++', 'Python', 'PHP', 'HTML', 'CSS', 'JavaScript', 'React', 'MySQL',
@@ -33,9 +33,14 @@ export function ProfileSection() {
           <p className="mt-6 max-w-3xl text-foreground/80 text-lg">
             Pursuing B.Tech in Computer Science Engineering with practical experience in Python, SQL, and modern web technologies. Certified in Machine Learning and Data Science with a strong foundation in problem-solving and teamwork. Eager to apply technical expertise in innovative and fast-paced environments.
           </p>
-          <div className="flex justify-center md:justify-start items-center gap-4 mt-8">
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 mt-8">
             <Button size="lg" asChild>
                 <a href="#contact">Contact Me <Mail className="ml-2" /></a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                View Resume <FileText className="ml-2" />
+              </a>
             </Button>
             <div className="flex items-center gap-2">
                 <Button variant="outline" size="icon" asChild>
