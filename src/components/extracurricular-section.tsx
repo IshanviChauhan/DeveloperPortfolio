@@ -8,7 +8,7 @@ export function ExtracurricularSection() {
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Extracurricular Activities</h2>
                 <p className="text-lg text-foreground/80 mt-2">My involvement beyond academics.</p>
             </div>
-            <Card className="max-w-4xl mx-auto shadow-lg border">
+            <Card className="max-w-4xl mx-auto border transition-shadow duration-300 hover:shadow-glow-orange-white">
                 <CardHeader className="flex-row items-center gap-4 p-6">
                     <div className="bg-primary/10 text-primary p-3 rounded-full">
                         <Users size={28} />

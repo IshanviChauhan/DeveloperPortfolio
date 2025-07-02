@@ -21,7 +21,7 @@ export function CertificationsSection() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certifications.map((cert) => (
-                    <Card key={cert.name} className="flex flex-col text-center hover:shadow-lg transition-shadow border">
+                    <Card key={cert.name} className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border">
                         <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
                             <BadgeCheck className="text-primary h-12 w-12 mb-4" />
                             <p className="font-semibold flex-grow">{cert.name}</p>

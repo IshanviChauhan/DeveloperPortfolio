@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'glow-orange-white': '0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(240, 137, 81, 0.5)',
+      },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Space Grotesk', 'sans-serif'],
