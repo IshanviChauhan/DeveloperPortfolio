@@ -42,7 +42,7 @@ export function EducationSection() {
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Education</h2>
             <p className="text-lg text-foreground/80 mt-2">My academic journey.</p>
         </div>
-        <div className="relative w-full md:w-1/2 h-[150px] sm:h-[200px] md:h-[250px] flex-shrink-0">
+        <div className="relative w-full md:w-1/2 h-[300px] sm:h-[350px] md:h-[400px] flex-shrink-0 z-10">
             <EducationSplineModel />
         </div>
       </div>
@@ -54,7 +54,7 @@ export function EducationSection() {
               <div className="absolute -left-8 top-1.5 h-6 w-6 rounded-full bg-primary flex items-center justify-center ring-8 ring-background">
                 <School className="h-4 w-4 text-primary-foreground" />
               </div>
-              <div className="bg-card p-6 rounded-lg shadow-md border">
+              <div className="bg-card p-6 rounded-lg shadow-md border hover:shadow-glow-orange-white transition-shadow">
                 <p className="font-semibold text-primary">{edu.period}</p>
                 <h3 className="font-headline text-xl font-bold mt-1">{edu.degree}</h3>
                 <p className="text-foreground/80 font-medium">{edu.institution}</p>
