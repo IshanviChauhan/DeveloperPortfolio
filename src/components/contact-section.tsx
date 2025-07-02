@@ -7,8 +7,8 @@ export function ContactSection() {
   return (
     <footer id="contact" className="bg-muted mt-24 py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-16 mb-16">
-          <div className="text-center md:text-left max-w-lg">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-16 mb-16">
+          <div className="text-center sm:text-left max-w-lg">
             <h2 className="text-3xl font-headline font-bold text-foreground">Get In Touch</h2>
             <p className="mt-4 text-lg text-foreground/80">
               I'm currently open to new opportunities and collaborations. My inbox is always open, so feel free to reach out if you have a project in mind or just want to connect!
