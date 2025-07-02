@@ -3,6 +3,7 @@ import { Card, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
+import { SplineModel } from './spline-model';
 
 const projects = [
   {
@@ -54,6 +55,11 @@ export function ProjectsSection() {
         <h2 className="text-3xl md:text-4xl font-headline font-bold">Projects</h2>
         <p className="text-lg text-foreground/80 mt-2">A selection of my work.</p>
       </div>
+
+      <div className="relative mx-auto w-full max-w-4xl h-[400px] md:h-[500px] -mb-8 md:-mb-16">
+        <SplineModel />
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
