@@ -54,6 +54,19 @@ export function InterestsSection() {
                         );
                     }
 
+                    if (interest.name === 'Listening to Music') {
+                        return (
+                            <a href="https://open.spotify.com/user/rn5qyh5tgy560i472szesmt9f?si=29e17d65d4424924" target="_blank" rel="noopener noreferrer" key={interest.name}>
+                                <Card className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border h-full group cursor-pointer">
+                                    <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
+                                        <Icon className="text-primary h-12 w-12 mb-4" />
+                                        <p className="font-semibold flex-grow group-hover:underline">{interest.name}</p>
+                                    </CardContent>
+                                </Card>
+                            </a>
+                        );
+                    }
+
                     return (
                         <Card key={interest.name} className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border h-full">
                             <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
