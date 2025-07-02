@@ -10,6 +10,8 @@ const navLinks = [
     { href: "#education", label: "Education" },
     { href: "#projects", label: "Projects" },
     { href: "#certifications", label: "Certifications" },
+    { href: "#extracurricular", label: "Activities" },
+    { href: "#interests", label: "Interests" },
     { href: "#contact", label: "Contact" },
 ];
 

@@ -1,0 +1,35 @@
+import { Card, CardContent } from '@/components/ui/card';
+import { BrainCircuit, Code2, BarChart3, GitBranch, PenTool, BookOpen } from 'lucide-react';
+
+const interests = [
+    { name: 'AI & Machine Learning', icon: BrainCircuit },
+    { name: 'Web Development', icon: Code2 },
+    { name: 'Data Visualization', icon: BarChart3 },
+    { name: 'Open Source', icon: GitBranch },
+    { name: 'Calligraphy', icon: PenTool },
+    { name: 'Reading Tech Blogs', icon: BookOpen },
+];
+
+export function InterestsSection() {
+    return (
+        <section id="interests" className="space-y-16">
+            <div className="text-center">
+                <h2 className="text-3xl md:text-4xl font-headline font-bold">Interests & Hobbies</h2>
+                <p className="text-lg text-foreground/80 mt-2">Things I enjoy doing in my free time.</p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                {interests.map((interest) => {
+                    const Icon = interest.icon;
+                    return (
+                        <Card key={interest.name} className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border">
+                            <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
+                                <Icon className="text-primary h-12 w-12 mb-4" />
+                                <p className="font-semibold flex-grow">{interest.name}</p>
+                            </CardContent>
+                        </Card>
+                    );
+                })}
+            </div>
+        </section>
+    );
+}
