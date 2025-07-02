@@ -42,7 +42,7 @@ export function EducationSection() {
             <h2 className="text-3xl md:text-4xl font-headline font-bold">Education</h2>
             <p className="text-lg text-foreground/80 mt-2">My academic journey.</p>
         </div>
-        <div className="relative w-full md:w-1/2 h-[200px] sm:h-[250px] md:h-[300px] flex-shrink-0">
+        <div className="relative w-full md:w-1/2 h-[150px] sm:h-[200px] md:h-[250px] flex-shrink-0">
             <EducationSplineModel />
         </div>
       </div>
