@@ -65,16 +65,16 @@ export function ProfileSection() {
             <h3 className="text-center text-3xl md:text-4xl font-headline font-bold mb-12">My Skillset</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
-                    <h4 className="text-xl font-headline font-semibold mb-4 text-primary text-center md:text-left">Technical Skills</h4>
-                    <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                    <h4 className="text-xl font-headline font-semibold mb-4 text-primary text-center">Technical Skills</h4>
+                    <div className="flex flex-wrap justify-center gap-3">
                         {technicalSkills.map(skill => (
                           <Badge key={skill} className="text-base px-4 py-2 rounded-lg">{skill}</Badge>
                         ))}
                     </div>
                 </div>
                 <div>
-                    <h4 className="text-xl font-headline font-semibold mb-4 text-primary text-center md:text-left">Soft Skills</h4>
-                    <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                    <h4 className="text-xl font-headline font-semibold mb-4 text-primary text-center">Soft Skills</h4>
+                    <div className="flex flex-wrap justify-center gap-3">
                         {softSkills.map(skill => (
                           <Badge key={skill} variant="secondary" className="text-base px-4 py-2 rounded-lg">{skill}</Badge>
                         ))}
