@@ -41,6 +41,19 @@ export function InterestsSection() {
                         );
                     }
                     
+                    if (interest.name === 'Graphic Designing') {
+                        return (
+                            <Link href="/graphic-design" key={interest.name}>
+                                <Card className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border h-full group cursor-pointer">
+                                    <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
+                                        <Icon className="text-primary h-12 w-12 mb-4" />
+                                        <p className="font-semibold flex-grow group-hover:underline">{interest.name}</p>
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        );
+                    }
+
                     return (
                         <Card key={interest.name} className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border h-full">
                             <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
