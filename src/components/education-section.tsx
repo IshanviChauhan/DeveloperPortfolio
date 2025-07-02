@@ -1,7 +1,15 @@
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { School } from 'lucide-react';
 
-const education = [
+interface Education {
+  degree: string;
+  institution: string;
+  school?: string;
+  period: string;
+  details: string;
+}
+
+const education: Education[] = [
   {
     degree: 'Bachelor of Technology',
     institution: 'ABES Engineering College, Ghaziabad',
@@ -11,12 +19,14 @@ const education = [
   {
     degree: 'Senior Secondary (XII)',
     institution: 'Central Board of Secondary Education',
+    school: 'Cambridge School Indirapuram',
     period: '2022',
     details: 'Percentage: 93.8%'
   },
   {
     degree: 'Secondary (X)',
     institution: 'Central Board of Secondary Education',
+    school: 'Cambridge School Indirapuram',
     period: '2020',
     details: 'Percentage: 95.2%'
   }
@@ -41,6 +51,7 @@ export function EducationSection() {
                 <p className="font-semibold text-primary">{edu.period}</p>
                 <h3 className="font-headline text-xl font-bold mt-1">{edu.degree}</h3>
                 <p className="text-foreground/80 font-medium">{edu.institution}</p>
+                {edu.school && <p className="text-foreground/80 font-medium">{edu.school}</p>}
                 <p className="text-foreground/70 mt-2">{edu.details}</p>
               </div>
             </div>
