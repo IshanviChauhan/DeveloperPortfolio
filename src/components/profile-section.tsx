@@ -38,7 +38,7 @@ export function ProfileSection() {
                 <a href="#contact">Contact Me <Mail className="ml-2" /></a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1UtRc4Cxv1TRsGEUx9c0ISb-gtZaJPdDz/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 View Resume <FileText className="ml-2" />
               </a>
             </Button>
