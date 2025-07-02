@@ -1,13 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { BrainCircuit, Code2, BarChart3, GitBranch, PenTool, BookOpen } from 'lucide-react';
+import { Camera, PenTool, Music, BookOpen, Film } from 'lucide-react';
 
 const interests = [
-    { name: 'AI & Machine Learning', icon: BrainCircuit },
-    { name: 'Web Development', icon: Code2 },
-    { name: 'Data Visualization', icon: BarChart3 },
-    { name: 'Open Source', icon: GitBranch },
-    { name: 'Calligraphy', icon: PenTool },
-    { name: 'Reading Tech Blogs', icon: BookOpen },
+    { name: 'Photography', icon: Camera },
+    { name: 'Graphic Designing', icon: PenTool },
+    { name: 'Listening to Music', icon: Music },
+    { name: 'Reading Story Books', icon: BookOpen },
+    { name: 'Watching Movies', icon: Film },
 ];
 
 export function InterestsSection() {
