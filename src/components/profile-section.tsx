@@ -18,7 +18,7 @@ export function ProfileSection() {
     <div className="relative -mx-4 sm:-mx-6 lg:-mx-8 overflow-hidden -mt-16">
       <Meteors number={30} />
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 pt-16">
-        <section id="home" className="text-center md:text-left pt-8 pb-8">
+        <section id="home" className="pt-8 pb-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
             <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
                 <Image
@@ -31,10 +31,10 @@ export function ProfileSection() {
                   priority
                 />
             </div>
-            <div className="flex-grow">
+            <div className="flex-grow text-center md:text-left">
               <Badge variant="secondary" className="mb-4 text-sm font-medium">B.Tech in Computer Science Engineering Student</Badge>
               <h1 className="text-4xl md:text-6xl font-headline font-extrabold text-primary">Ishanvi Chauhan</h1>
-              <p className="mt-6 max-w-3xl text-foreground/80 text-lg">
+              <p className="mt-6 max-w-3xl text-foreground/80 text-lg mx-auto md:mx-0">
                 Pursuing B.Tech in Computer Science Engineering with practical experience in Python, SQL, and modern web technologies. Certified in Machine Learning and Data Science with a strong foundation in problem-solving and teamwork. Eager to apply technical expertise in innovative and fast-paced environments.
               </p>
               <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 mt-8">
@@ -51,10 +51,8 @@ export function ProfileSection() {
                         <a href="https://github.com/IshanviChauhan" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><Github /></a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                        <a href="https://www.linkedin.com/in/ishanvi-chauhan" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                            <svg viewBox="0 0 24 24" fill="#0a66c2" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.75 1.75 0 0 1 6.5 8.25ZM19 19h-3v-4.75c0-1.4-1.2-2.5-2.5-2.5S11 12.85 11 14.25V19h-3v-9h2.9v1.3a3.5 3.5 0 0 1 3.1-1.8C18.4 9.5 19 11.4 19 13.5z"></path>
-                            </svg>
+                        <a href="https://www.linkedin.com/in/ishanvi-chauhan/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#0a66c2" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
                         </a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
