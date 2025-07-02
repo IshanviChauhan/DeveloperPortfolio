@@ -14,32 +14,26 @@ const certifications = [
 
 export function CertificationsSection() {
     return (
-        <section id="certifications" className="space-y-12">
+        <section id="certifications" className="space-y-16">
             <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold">Courses & Certifications</h2>
                 <p className="text-lg text-foreground/80 mt-2">My professional development and achievements.</p>
             </div>
-            <Card>
-                <CardContent className="p-6">
-                    <ul className="space-y-6">
-                        {certifications.map((cert) => (
-                            <li key={cert.name} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                                <div className="flex items-start gap-4">
-                                    <BadgeCheck className="text-primary h-6 w-6 mt-1 flex-shrink-0" />
-                                    <div>
-                                        <p className="font-semibold">{cert.name}</p>
-                                        <p className="text-sm text-foreground/70">{cert.issuer} - {cert.date}</p>
-                                    </div>
-                                </div>
-                                <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline flex items-center gap-1 shrink-0 ml-10 sm:ml-0">
-                                    View Credential
-                                    <LinkIcon className="h-3 w-3" />
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </CardContent>
-            </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {certifications.map((cert) => (
+                    <Card key={cert.name} className="flex flex-col text-center hover:shadow-lg transition-shadow border">
+                        <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
+                            <BadgeCheck className="text-primary h-12 w-12 mb-4" />
+                            <p className="font-semibold flex-grow">{cert.name}</p>
+                            <p className="text-sm text-foreground/70 mt-2">{cert.issuer} - {cert.date}</p>
+                            <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline flex items-center gap-1 mt-4">
+                                View Credential
+                                <LinkIcon className="h-3 w-3" />
+                            </a>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
         </section>
     );
 }

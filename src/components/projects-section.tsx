@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
@@ -49,49 +49,47 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="space-y-12">
+    <section id="projects" className="space-y-16">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-headline font-bold">Projects</h2>
         <p className="text-lg text-foreground/80 mt-2">A selection of my work.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
-          <Card key={project.title} className="flex flex-col bg-card overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-            <CardHeader>
-              <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
-              <CardDescription>{project.date}</CardDescription>
-            </CardHeader>
-            <CardContent className="flex-grow space-y-4">
-              <div className="aspect-video relative">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    data-ai-hint={project.imageHint}
-                    fill
-                    className="object-cover rounded-md border"
-                  />
-              </div>
-              <p className="text-foreground/90 flex-grow">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+          <Card key={project.title} className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+            <div className="aspect-video relative">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  data-ai-hint={project.imageHint}
+                  fill
+                  className="object-cover"
+                />
+            </div>
+            <div className="flex flex-col flex-grow p-6">
+              <CardTitle className="font-headline text-xl mb-1">{project.title}</CardTitle>
+              <CardDescription className="mb-4">{project.date}</CardDescription>
+              <p className="text-foreground/80 flex-grow mb-4">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
-                  <Badge key={tech} variant="outline">{tech}</Badge>
+                  <Badge key={tech} variant="secondary">{tech}</Badge>
                 ))}
               </div>
-            </CardContent>
-            <CardFooter className="flex justify-end gap-2">
-              <Button variant="ghost" size="sm" asChild>
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <Github className="mr-2 h-4 w-4" />
-                  GitHub
-                </a>
-              </Button>
-              <Button size="sm" asChild>
-                <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Live Demo
-                </a>
-              </Button>
-            </CardFooter>
+              <div className="flex justify-end gap-2 mt-auto">
+                <Button variant="ghost" size="sm" asChild>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    GitHub
+                  </a>
+                </Button>
+                <Button size="sm" asChild>
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Live Demo
+                  </a>
+                </Button>
+              </div>
+            </div>
           </Card>
         ))}
       </div>

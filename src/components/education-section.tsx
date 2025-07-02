@@ -24,27 +24,28 @@ const education = [
 
 export function EducationSection() {
   return (
-    <section id="education" className="space-y-12">
+    <section id="education" className="space-y-16">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-headline font-bold">Education</h2>
-        <p className="text-lg text-foreground/80 mt-2">My academic background.</p>
+        <p className="text-lg text-foreground/80 mt-2">My academic journey.</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {education.map((edu) => (
-          <Card key={edu.degree} className="bg-card text-center">
-            <CardHeader>
-              <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full mb-4 w-fit">
-                <School size={28} />
+      <div className="relative max-w-3xl mx-auto">
+        <div className="absolute left-4 top-0 h-full w-0.5 bg-border" aria-hidden="true"></div>
+        <div className="space-y-10 pl-12">
+          {education.map((edu) => (
+            <div key={edu.degree} className="relative">
+              <div className="absolute -left-8 top-1.5 h-6 w-6 rounded-full bg-primary flex items-center justify-center ring-8 ring-background">
+                <School className="h-4 w-4 text-primary-foreground" />
               </div>
-              <CardTitle className="font-headline">{edu.degree}</CardTitle>
-              <CardDescription>{edu.institution}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="font-semibold text-primary">{edu.period}</p>
-              <p className="text-foreground/80 mt-2">{edu.details}</p>
-            </CardContent>
-          </Card>
-        ))}
+              <div className="bg-card p-6 rounded-lg shadow-md border">
+                <p className="font-semibold text-primary">{edu.period}</p>
+                <h3 className="font-headline text-xl font-bold mt-1">{edu.degree}</h3>
+                <p className="text-foreground/80 font-medium">{edu.institution}</p>
+                <p className="text-foreground/70 mt-2">{edu.details}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
