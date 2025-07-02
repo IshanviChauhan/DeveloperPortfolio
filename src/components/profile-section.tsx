@@ -20,20 +20,20 @@ export function ProfileSection() {
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 pt-16">
         <section id="home" className="pt-8 pb-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-            <div className="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+            <div className="flex justify-center items-center relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
               <Image
-                src="/profile.png"
+                src="/Ghibli-Image-Ishanvi.png"
                 alt="Profile Picture"
                 width={256}
                 height={256}
-                className="rounded-full object-cover border-4 border-primary/50 shadow-lg"
+                className="rounded-full object-cover shadow-lg"
                 priority
               />
             </div>
-            <div className="flex-grow text-center md:text-left">
+            <div className="flex-grow text-center md:text-left mt-4 md:mt-0">
               <Badge variant="secondary" className="mb-4 text-sm font-medium">B.Tech in Computer Science Engineering Student</Badge>
               <h1 className="text-4xl md:text-6xl font-headline font-extrabold text-primary">Ishanvi Chauhan</h1>
-              <p className="mt-6 max-w-3xl text-foreground/80 text-lg mx-auto md:mx-0">
+              <p className="mt-4 max-w-4xl text-foreground/80 text-lg mx-auto md:mx-0">
                 Pursuing B.Tech in Computer Science Engineering with practical experience in Python, SQL, and modern web technologies. Certified in Machine Learning and Data Science with a strong foundation in problem-solving and teamwork. Eager to apply technical expertise in innovative and fast-paced environments.
               </p>
               <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 mt-8">
