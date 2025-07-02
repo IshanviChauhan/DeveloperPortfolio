@@ -7,7 +7,6 @@ export function LiveClock() {
     hours: '00',
     minutes: '00',
   });
-  const [heartbeat, setHeartbeat] = useState(90);
 
   useEffect(() => {
     const updateClock = () => {
@@ -16,7 +15,6 @@ export function LiveClock() {
             hours: now.getHours().toString().padStart(2, '0'),
             minutes: now.getMinutes().toString().padStart(2, '0'),
         });
-        setHeartbeat(Math.floor(Math.random() * (98 - 85 + 1)) + 85);
     };
 
     updateClock(); // Set initial time immediately
@@ -33,7 +31,6 @@ export function LiveClock() {
           <span>{time.minutes}</span>
         </div>
         <div className="flex flex-row justify-center items-center gap-1 font-thin">
-          <span>{heartbeat}</span>
           <svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-5 h-5 fill-red-500">
             <path fillRule="evenodd" d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z">
             </path>
