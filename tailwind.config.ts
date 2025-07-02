@@ -94,10 +94,10 @@ export default {
           },
         },
         'meteor-effect': {
-          '0%': { transform: 'rotate(235deg) translateX(0)', opacity: '1' },
+          '0%': { transform: 'rotate(250deg) translateX(0)', opacity: '1' },
           '70%': { opacity: '1' },
           '100%': {
-            transform: 'rotate(235deg) translateX(-500px)',
+            transform: 'rotate(250deg) translateX(-500px)',
             opacity: '0',
           },
         },

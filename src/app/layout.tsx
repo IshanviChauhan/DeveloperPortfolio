@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased bg-background text-foreground">
         <div className="relative overflow-hidden h-[700px] w-full">
-          <Meteors number={30} />
+          <Meteors number={20} />
           <div className="relative z-10">
             <Header />
             {children}
