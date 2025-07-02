@@ -20,7 +20,7 @@ export function ProjectsSection() {
       <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-3">
         {projects.map((project) => (
           <Link href={`/projects/${project.slug}`} key={project.slug}>
-            <Card className="overflow-hidden transition-all duration-300 hover:shadow-glow-orange-white hover:-translate-y-1 group h-full flex flex-col">
+            <Card className="overflow-hidden transition-all duration-300 shadow-glow-orange-white hover:-translate-y-1 group h-full flex flex-col">
               <div className="aspect-video relative">
                   <Image
                     src={project.image}

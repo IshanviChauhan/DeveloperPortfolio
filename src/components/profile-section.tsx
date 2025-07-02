@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Mail, Phone, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { Meteors } from '@/components/magicui/meteors';
 
 const technicalSkills = [
@@ -48,13 +48,17 @@ export function ProfileSection() {
                 </Button>
                 <div className="flex items-center gap-2">
                     <Button variant="outline" size="icon" asChild>
-                        <a href="https://github.com" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><Github /></a>
+                        <a href="https://github.com/IshanviChauhan" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><Github /></a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
                         <a href="https://www.linkedin.com/in/ishanvi-chauhan" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                        <a href="tel:+919871308893" aria-label="Phone"><Phone /></a>
+                        <a href="https://wa.me/919871308893" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.91-9.91zm0 18.16c-1.48 0-2.93-.38-4.22-1.12l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.42 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.2c-.25-.12-1.47-.72-1.7-.8s-.39-.12-.56.12c-.17.25-.64.8-.79 1s-.3.17-.56 0c-.25-.12-1.07-.39-2.04-1.26-.75-.66-1.26-1.47-1.41-1.72s-.03-.38.11-.51c.13-.12.28-.3.42-.45.14-.15.18-.25.28-.42s.05-.17 0-.3-.56-1.34-.76-1.84c-.2-.48-.4-.42-.55-.42H8.8c-.16 0-.35.05-.53.24-.18.19-.7.68-.7 1.67s.72 1.93.82 2.08c.1.15 1.41 2.16 3.43 3.06 2.02.9 2.02.6 2.37.58.35-.02 1.07-.44 1.22-.85.15-.41.15-.77.1-.85s-.16-.18-.42-.3z"/>
+                            </svg>
+                        </a>
                     </Button>
                 </div>
               </div>
