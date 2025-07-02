@@ -23,7 +23,6 @@ export function CertificationsSection() {
                 {certifications.map((cert) => (
                     <Card key={cert.name} className="flex flex-col text-center hover:shadow-glow-orange-white transition-shadow border">
                         <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
-                            <BadgeCheck className="text-primary h-12 w-12 mb-4" />
                             <p className="font-semibold flex-grow">{cert.name}</p>
                             <p className="text-sm text-foreground/70 mt-2">{cert.issuer} - {cert.date}</p>
                             <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline flex items-center gap-1 mt-4">
