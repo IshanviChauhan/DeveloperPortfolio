@@ -24,7 +24,7 @@ export function ProfileSection() {
         />
       </div>
       <div className="text-center md:text-left">
-        <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary dark:text-primary">Alex Doe</h1>
+        <h1 className="text-4xl md:text-6xl font-headline font-bold text-primary dark:text-primary">Ishanvi Chauhan</h1>
         <p className="text-xl md:text-2xl font-medium text-foreground/80 mt-2">Full-Stack Developer & UI/UX Enthusiast</p>
         
         <div className="mt-4 text-lg min-h-[28px]">

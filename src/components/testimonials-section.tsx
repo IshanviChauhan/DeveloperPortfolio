@@ -10,7 +10,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const testimonials = [
   {
-    quote: "Working with Alex was a game-changer. Their attention to detail and commitment to quality is unparalleled. The final product exceeded all our expectations.",
+    quote: "Working with Ishanvi was a game-changer. Their attention to detail and commitment to quality is unparalleled. The final product exceeded all our expectations.",
     name: 'Jane Smith',
     title: 'CEO, Innovate Inc.',
     avatar: 'https://placehold.co/40x40.png',
@@ -26,7 +26,7 @@ const testimonials = [
     fallback: 'CR',
   },
   {
-    quote: "The ability to translate complex requirements into a simple, elegant, and user-friendly interface is what sets Alex apart. A true professional.",
+    quote: "The ability to translate complex requirements into a simple, elegant, and user-friendly interface is what sets Ishanvi apart. A true professional.",
     name: 'Emily White',
     title: 'Product Manager, Creative Co.',
     avatar: 'https://placehold.co/40x40.png',

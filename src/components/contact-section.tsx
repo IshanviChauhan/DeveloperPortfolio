@@ -11,7 +11,7 @@ export function ContactSection() {
           I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project in mind or just want to connect!
         </p>
         <Button asChild size="lg" className="mt-8">
-          <a href="mailto:alex.doe@example.com">
+          <a href="mailto:ishanvi.chauhan@example.com">
             Say Hello
           </a>
         </Button>
@@ -27,7 +27,7 @@ export function ContactSection() {
           </a>
         </div>
         <p className="mt-12 text-sm text-secondary-foreground/60">
-          © {year} Alex Doe. All Rights Reserved.
+          © {year} Ishanvi Chauhan. All Rights Reserved.
         </p>
       </div>
     </footer>
