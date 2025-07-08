@@ -4,7 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { ConditionalHeader } from '@/components/conditional-header';
 
 export const metadata: Metadata = {
-  title: 'DevCard - Ishanvi Chauhan',
+  title: 'Portfolio - Ishanvi Chauhan',
   description: 'A personal portfolio for Ishanvi Chauhan, a B.Tech in Computer Science Engineering student.',
 };
 
