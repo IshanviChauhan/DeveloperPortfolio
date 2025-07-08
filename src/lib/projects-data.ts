@@ -33,6 +33,17 @@ export const projects = [
     live: 'https://breatheasy24.netlify.app/'
   },
   {
+    slug: 'aarambh-decor',
+    title: 'Aarambh Decor - Home Decor E-Commerce Website',
+    date: 'May 2024',
+    description: 'Designed and developed a fully responsive e-commerce website for Aarambh Decor, a home decor business. The site features a clean design, product galleries, and a seamless user experience to drive online sales.',
+    image: '/AarambhDecor.png',
+    imageHint: 'home decor website',
+    technologies: ['Next.js', 'React', 'Tailwind CSS', 'Vercel'],
+    github: '#',
+    live: 'https://aarambhdecor.vercel.app/'
+  },
+  {
     slug: 'multitasking-automation-bot',
     title: 'Multi-Tasking Bot for Customized Automation',
     date: 'Aug 2023 - Dec 2023',
