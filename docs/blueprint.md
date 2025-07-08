@@ -1,4 +1,4 @@
-# **App Name**: DevCard
+# **App Name**: IshanviPortfolio
 
 ## Core Features:
 
