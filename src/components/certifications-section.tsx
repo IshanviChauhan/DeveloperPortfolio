@@ -25,10 +25,6 @@ export function CertificationsSection() {
                         <CardContent className="p-6 flex flex-col flex-grow items-center justify-center">
                             <p className="font-semibold flex-grow">{cert.name}</p>
                             <p className="text-sm text-foreground/70 mt-2">{cert.issuer} - {cert.date}</p>
-                            <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline flex items-center gap-1 mt-4">
-                                View Credential
-                                <LinkIcon className="h-3 w-3" />
-                            </a>
                         </CardContent>
                     </Card>
                 ))}

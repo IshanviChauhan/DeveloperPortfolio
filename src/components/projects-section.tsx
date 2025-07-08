@@ -27,7 +27,7 @@ export function ProjectsSection() {
                     alt={project.title}
                     data-ai-hint={project.imageHint}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
               </div>
               <CardHeader className="p-4 flex-grow">
